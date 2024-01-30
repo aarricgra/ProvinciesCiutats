@@ -1,5 +1,7 @@
-package com.example.provinciesciutats2.model;
+package com.example.provinciesciutats2.model.entintats;
 
+import com.example.provinciesciutats2.model.entintats.Ciutats;
+import com.example.provinciesciutats2.model.entintats.Paisos;
 import jakarta.persistence.*;
 
 import java.util.List;

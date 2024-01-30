@@ -1,6 +1,9 @@
-package com.example.provinciesciutats2.model;
+package com.example.provinciesciutats2.model.entintats;
 
 import jakarta.persistence.*;
+
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table
@@ -16,6 +19,9 @@ public class Ciutats {
     @ManyToOne
     @JoinColumn(name = "id_provincia")
     private Provincies provincia;
+
+    @OneToMany(mappedBy = "id")
+    private List<Franquicies> ciutatsFranquicies;
 
     public Long getId() {
         return id;
@@ -63,6 +69,14 @@ public class Ciutats {
 
     public void setProvincia(Provincies provincia) {
         this.provincia = provincia;
+    }
+
+    public List<Franquicies> getCiutatsFranquicies() {
+        return ciutatsFranquicies;
+    }
+
+    public void setCiutatsFranquicies(List<Franquicies> ciutatsFranquicies) {
+        this.ciutatsFranquicies = ciutatsFranquicies;
     }
 
     public Ciutats(Long id, String nom, int poblacio, String descripcio, String imatge, Provincies provincia) {
