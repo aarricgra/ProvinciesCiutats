@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llista de Ciutats</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1>Llista de Països</h1>
+<ul>
+    <li th:each="pais : ${paisos}" th:text="${pais.nom}"></li>
+</ul>
+</body>
+</html>
