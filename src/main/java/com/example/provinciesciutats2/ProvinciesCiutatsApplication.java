@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProvinciesCiutats2Application {
+public class ProvinciesCiutatsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProvinciesCiutats2Application.class, args);
+		SpringApplication.run(ProvinciesCiutatsApplication.class, args);
 	}
 
 }
